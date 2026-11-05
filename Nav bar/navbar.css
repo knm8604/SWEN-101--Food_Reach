@@ -47,7 +47,7 @@ body {
     margin: 0 24px;
     position: relative;
 }
-.nav-links-container > .nav-links:first-of-type {
+/* .nav-links-container > .nav-links:first-of-type {
     width: 33%;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ body {
     display: inline-block;
     margin: 0;
     position: relative;
-}
+} */
 .nav-links > .nav-links-items a {
     text-decoration: none;
     display: flex;
