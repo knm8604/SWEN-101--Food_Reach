@@ -1,4 +1,4 @@
-(() => {
+// (() => {
     const openNav = document.querySelector(".menu"),
     closeNav = document.querySelector(".close-menu"),
     navMenu = document.querySelector(".nav-links-container"),
@@ -47,4 +47,4 @@
         }
     }
 
-})();
+// })();
