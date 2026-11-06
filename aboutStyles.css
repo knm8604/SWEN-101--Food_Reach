@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --primary-green: #3A5B22;
+    --primary-gray: rgb(173, 171, 171);
+    --secondary-gray: rgb(150, 145, 145);
+    --secondary-green: #929F88;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;;
+}
+
+@keyframes typing-effect {
+    from {
+
+    }
+    to {
+
+    }
+}
+
+.topContainerWrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.sublabel {
+    font-weight: bolder;
+    color: var(--secondary-green);
+    /* text-shadow: 2px 2px 3px rgba(53, 56, 52, 0.5); */
+}
+
+.aboutUsTopContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUsTopContainer + img {
+    width: 30%;
+}
+
+.aboutUsTopContainer > h1 {
+    margin: 5px 10px;
+    line-height: 40px;
+    color: var(--primary-green);
+}
+
+.aboutUsTopContainer > h3 {
+    color: var(--primary-green);
+    animation: rising-appear 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+.typing-effect span {
+    opacity: 0;
+    animation: appear 0.01s forwards;
+    animation-delay: calc(var(--i) * 40ms);
+}
+
+
+
+@keyframes appear {
+    to { opacity: 1; }
+}
+
+@keyframes rising-appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
