@@ -12,18 +12,10 @@
     font-family: 'Poppins', sans-serif;;
 }
 
-@keyframes typing-effect {
-    from {
-
-    }
-    to {
-
-    }
-}
-
 .topContainerWrapper {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    /* grid-template-rows: 1; */
+    grid-template-columns: 3fr 2fr;
     margin: 30px;
 }
 
@@ -39,7 +31,9 @@
 }
 
 .aboutUsTopContainer + img {
-    width: 30%;
+    width: 90%;
+    margin: 20px;
+    place-self: center;
 }
 
 .aboutUsTopContainer > h1 {
@@ -55,10 +49,17 @@
     opacity: 0;
 }
 
+.aboutUsTopContainer > p {
+    color: var(--primary-green);
+    margin: 10px;
+    font-size: larger;
+    font-weight: lighter;
+}
+
 .typing-effect span {
     opacity: 0;
     animation: appear 0.01s forwards;
-    animation-delay: calc(var(--i) * 40ms);
+    animation-delay: calc(var(--i) * 40ms + 0.3s);
 }
 
 
