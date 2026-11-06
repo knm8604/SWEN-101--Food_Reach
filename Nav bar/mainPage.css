@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --primary-green: #3A5B22;
+    --primary-gray: rgb(173, 171, 171);
+    --secondary-gray: rgb(150, 145, 145);
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.homeScreenImagesContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.homeScreenImagesContainer > button {
+    width: 15vw;
+    background-color: var(--primary-gray);
+    opacity: 0.8;
+    font-weight: bolder;
+    font-size: xx-large;
+    border: none;
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+.homeScreenImagesContainer > button:hover {
+    background-color: var(--secondary-gray);
+    opacity: 1;
+    transform: scale(1.01);
+    border-radius: 5px;
+}
+
+.homeScreenImagesContainer > button:active {
+    background-color: var(--primary-gray);
+    transform: scale(1);
+    border-radius: 0px;
+}
+
+.homeScreenImage {
+    width: 80vw;
+    
+}
+
+.hp-statistic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+
+    opacity: 0;
+
+    animation: fade-in-up both;
+    animation-timing-function: ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 50% entry 100%;
+}
+
+.hp-statistic-container > img {
+    width: 130px;
+    margin: 0;
+}
+
+.hp-statistic-container > h2 {
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.hp-statistic-container > p {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.hp-statistic-container > h2, .hp-statistic-container > p {
+    color: var(--primary-green);
+    margin: 0;
+}
