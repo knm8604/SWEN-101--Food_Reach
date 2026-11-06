@@ -5,6 +5,7 @@
     --primary-gray: rgb(173, 171, 171);
     --secondary-gray: rgb(150, 145, 145);
     --secondary-green: #929F88;
+    --tertiary-green: #2d4918;
 }
 
 * {
@@ -56,13 +57,95 @@
     font-weight: lighter;
 }
 
+.aboutUsTopContainer > button {
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 40px;
+    border: none;
+    width: 30%;
+    height: 3em;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.aboutUsTopContainer > button:hover {
+    transform: scale(1.02);
+    background-color: var(--tertiary-green);
+}
+
+.aboutUsTopContainer > button:active {
+    transform: scale(0.98);
+    background-color: var(--primary-green);
+}
+
 .typing-effect span {
     opacity: 0;
     animation: appear 0.01s forwards;
     animation-delay: calc(var(--i) * 40ms + 0.3s);
 }
 
+.whatWeDoContainer {
+    margin: 0px 30px 10px 30px;
+}
 
+.whatWeDoCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.wwd-card {
+    border: var(--primary-green) 5px solid;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    justify-items: left;
+}
+
+.wwd-card > div * {
+    color: var(--primary-green);
+}
+
+.wwd-card > div > h2 {
+    line-height: 1.2em;
+    margin: 5px;
+}
+
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--primary-green) 3px solid;
+    padding: 5px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.icon-circle > img {
+    width: 75%;
+    display: block;
+}
+
+.c1 {
+    animation: rising-appear 0.75s both;
+}
+
+.c2 {
+    animation: rising-appear 0.75s both;
+    animation-delay: 0.25s;
+}
+
+.c3 {
+    animation: rising-appear 0.75s both;
+    animation-delay: 0.5s;
+}
+
+.whatWeDoContainer > .sublabel {
+    margin: 10px;
+}
 
 @keyframes appear {
     to { opacity: 1; }
