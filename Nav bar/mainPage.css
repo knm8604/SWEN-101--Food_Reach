@@ -42,8 +42,9 @@
 .homeScreenImagesContainer > button:hover {
     background-color: var(--secondary-gray);
     opacity: 1;
-    transform: scale(1.01);
-    border-radius: 5px;
+    cursor: pointer;
+    /* transform: scale(1.01);
+    border-radius: 5px; */
 }
 
 .homeScreenImagesContainer > button:active {
