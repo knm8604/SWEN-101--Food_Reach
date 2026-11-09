@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="../images/green_logo.png">
+    <link type="text/css" rel="stylesheet" href="mainPage.css">
+    <title>Food Reach</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- NAVBAR (COPY FOR ALL PAGES), LINK "navbar.css" FOR STYLES, CHANGE ANY RELATIVE PATHS AS NEEDED -->
+    <div class="nav-container">
+        <!--Logo-->
+        <div class="nav-logo">
+            <a href="home_page.html"><img src="../images/logo.png" alt="FoodReach logo" height="170px"></a>
+        </div>
+        <!--Menu icon-->
+        <i class="ri-menu-line menu"></i>
+
+        <div class="nav-links-container">
+            <!--Closing meny icon-->
+            <i class="ri-close-line close-menu"></i>
+
+            <!--List of item in nav bar-->
+            <ul class="nav-links">
+                <!-- Search icon -->
+                <li class="nav-links-items"><a href="#">
+                    <i class="ri-search-line"></i>
+                </a></li>
+
+                <!-- Donate dropdown -->
+                <li class="nav-links-items dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">Donate<i class="ri-arrow-down-s-line arrow_down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#"><i class="ri-map-pin-line icon"></i>Search by Location</a></li>
+                        <li class="dropdown-menu-item"><a href="#"><i class="ri-hand-heart-line icon"></i>Search by Charity</a></li>
+                        <li class="dropdown-menu-item"><a href="request.html"><i class="ri-message-3-line icon"></i>Search by Request</a></li>
+                    </ul>
+                </li>
+
+                <!-- Request dropdown -->
+                <li class="nav-links-items dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">Request<i class="ri-arrow-down-s-line arrow_down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="#"><i class="ri-hand-coin-line icon"></i>Request Monetary Donation</a></li>
+                        <li class="dropdown-menu-item"><a href="#"><i class="ri-restaurant-line icon"></i>Request Food Donation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-links">
+                <!-- About -->
+                <li class="nav-links-items"><a href="../about.html">About us</a></li>
+
+                <!-- Notification -->
+                <li class="nav-links-items"><a href="#">
+                    <i class="ri-notification-4-line icon"></i>
+                </a></li>
+
+                <!-- Avatar icon -->
+                <li class="nav-links-items"><a href="#">
+                    <i class="ri-account-circle-line icon"></i>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF NAVBAR -->
+    <!-- Home Page -->
+    <div class="homeScreenImagesContainer">
+        <button>&lt;</button>
+        <img class="homeScreenImage" src="../images/foodsharing.png" alt="Food Sharing">
+        <button>&gt;</button>
+    </div>
+    <div>
+        <div class="hp-statistic-container">
+            <img src="../images/FoodIcon1.png" alt="Food Icon 1">
+            <h2>645M+</h2>
+            <p>face hunger each and every day.</p>
+        </div>
+        <div class="hp-statistic-container">
+            <img src="../images/FoodIcon2.png" alt="Food Icon 2">
+            <h2>1.05B+</h2>
+            <p>tonnes of food wasted every day worldwide.</p>
+        </div>
+    </div>
+</body>
+</html>
