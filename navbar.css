@@ -124,7 +124,8 @@ body {
 @media (max-width: 992px) {
     body {
         max-width: 992px;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
     .nav-container {
         padding: 0 3rem;

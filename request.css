@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* ===================GENERAL==================== */
+:root {
+    --primary-green: #3A5B22;
+    --light-blue: #5F8DDC;
+    --money-box: #DDE8F9;
+    --money-box-stroke: #5A8BDE;
+    --money-font: #2B4C75;
+    --food-box: #DEEFD5;
+    --food-stroke: #99CF74;
+    --food-font: #164101;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ===================HEADING==================== */
+h2 {
+    color: var(--light-blue);
+    padding: 30px 4% 0;
+}
+
+/* ===================SEARCH BAR==================== */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+.search-container form {
+    width: 450px;
+    max-width: 100%;
+    padding: 8px 5px;
+    border: 2px solid #757575;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.search-container i {
+    font-size: 20px;
+    color: #757575;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.search-container input {
+    flex: 1;
+    width: 370px;
+    height: 80%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+}
+
+/* ===================FILTER BUTTONS==================== */
+.filter-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 27px;
+}
+.filter-button button {
+    border: none;
+    border-radius: 30px;
+    padding: 7px 17px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.filter-all, .filter-money {
+    background-color: var(--light-blue);
+    color: white;
+}
+.filter-food {
+    background-color: #96CA6E;
+    color: white;
+}
+.filter-nearby {
+    background-color: #E0E0DC;
+}
+.filter-all:hover, .filter-money:hover, .filter-food:hover, .filter-nearby:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
+}
+/* ===================REQUEST CARDS==================== */
+.requests-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 15px;
+    width: 100%;
+    padding: 10px 3%;
+}
+.request-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 18px;
+    width: 100%;
+}
+.request-card-link:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
+}
+.request-food-card, .request-money-card {
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 15px;
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.request-money-card {
+    background-color: var(--money-box);
+    border-color: var(--money-box-stroke);
+}
+.request-food-card {
+    background-color: var(--food-box);
+    border-color: var(--food-stroke);
+}
+.request-food-card h4, .request-money-card h4 {
+    font-size: 23px;
+    line-height: 1.15;
+    margin: 0 0 5px;
+}
+.request-food-card h4 {
+    color: var(--food-font);
+}
+.request-money-card h4 {
+    color: var(--money-font);
+}
+.request-food-card p, .request-money-card p {
+    color: black;
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0 0 10px;
+}
+/* ===================PROGRESS BARS==================== */
+.money-progress, .cans-progress {
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 4px 10px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.money-progress {
+    background: linear-gradient(to right, var(--money-box-stroke) 54%,  var(--money-box) 54%);
+    border-color: var(--money-box-stroke);
+}
+.cans-progress {
+    background: linear-gradient(to right, var(--food-stroke) 35%,  var(--food-box) 35%);
+    border-color: var(--food-stroke);
+}
+/* ===================REQUEST INFORMATION==================== */
+.request-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    color: black;
+    font-size: 13px;
+    margin-top: auto;
+}
+.donate-money, .donate-food {
+    display: flex;
+    justify-content: center;
+}
+.donate-money {
+    color: var(--money-font);
+}
+.donate-food {
+    color: var(--food-font);
+}
+
+/* ===================PAGINATION==================== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+.left-arrow, .right-arrow {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--light-blue);
+    width: auto;
+    height: auto;
+}
+.page-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--light-blue);
+}
+.pagination a {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+.page-num a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.pagination .active {
+    background-color: var(--light-blue);
+    color: white;
+}
+.pagination .disabled {
+    color: #ccc;
+}
+
+
+@media screen and (max-width: 992px) {
+    .requests-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    h2 {
+        font-size: 26px;
+    } 
+}

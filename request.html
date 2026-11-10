@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <link rel="icon" type="image/x-icon" href="../images/green_logo.png">
-    <link type="text/css" rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="request.css">
     <title>Food Reach</title>
     <script src="app.js" defer></script>
 </head>
@@ -66,54 +66,191 @@
     </div>
     <!-- END OF NAVBAR -->
     <!--Search by reuquest -->
-    <h3>SEARCH REQUESTS</h3>
+    <h2>SEARCH REQUESTS</h2>
+
+    <!--Search Bar -->
     <div class="search-container">
         <form action="/seach">
+            <i class="ri-search-line"></i>
             <input type="text" placeholder="Search requests by name or keyword...">
         </form>
     </div>
 
-    <div class="search-button">
-        <button type="button">All Requests</button>
-        <button type="button">Food Requests (Green Tag)</button>
-        <button type="button">Money Requests (Blue Tag)</button>
-        <button type="button">Nearby (City Name)</button>
+    <!--Filter Button -->
+    <div class="filter-button">
+        <button type="button" class="filter-all">All Requests</button>
+        <button type="button" class="filter-food">Food Requests (Green Tag)</button>
+        <button type="button" class="filter-money">Money Requests (Blue Tag)</button>
+        <button type="button" class="filter-nearby">Nearby (City Name)</button>
     </div>
 
-    <div class="request-container">
-        <ul class="request-links">
-            <li class="request-links-items"><a href="#">Help Family with Groceries this Month</a>
-                <p>Recently lost job and facing eviction. Need help with immediate basic food needs for three people</p>
-            </li>
+    <!--Request box -->
+    <section class="requests-grid">
 
-            <li class="request-links-items"><a href="#">Commed Food Drive for local shelter</a>
-                <p>Recently lost job and facing eviction. Need help with immediate basic food needs for three people</p>
-            </li>
+        <!--Money request 1 -->
+        <a href="#" class="request-card-link">
+            <div class="request-money-card">
+                <h4>Help Family with Groceries this Month</h4>
+                <p>
+                    Recently lost job and facing eviction. 
+                    Need help with immediate basic food needs for three people
+                </p>
+                <div class="money-progress">
+                    <span>Raised: $650 / Goal: $1,200</span>
+                </div>
+                <div class="request-info">
+                    <span>25 Donors</span>
+                    <span>7 Days Left</span>
+                </div>
+                <span class="donate-money">Donate Money</span>
+            </div>
+        </a>
 
-            <li class="request-links-items"><a href="#">Canned Food Drive for local shelter</a>
-                <p>Collecting canned vegetables, soups, and shelf-stable goods for our community partner</p>
-            </li>
+        <!--Food request 1 -->
+        <a href="#" class="request-card-link">
+            <div class="request-food-card">
+                <h4>Canned Food Drive for local shelter</h4>
+                <p>
+                    Collecting canned vegetables, soups, 
+                    and shelf-stable goods for our community partner
+                </p>
+                <div class="cans-progress">
+                    <span>Cans Collected: 35 / Goal: 100</span>
+                </div>
+                <div class="request-info">
+                    <span>Pickup: Central Community Center</span>
+                    <span>Drop-off window: Mon-Fri</span>
+                </div>
+                <span class="donate-food">Donate Food</span>
+            </div>
+        </a>
 
-            <li class="request-links-items"><a href="#">Collected Food Drive for local shelter</a>
-                <p>Collecting canned vegetables, soups, and shelf-stable goods for our community partner</p>
-            </li>
+         <!--Food request 2 -->
+        <a href="#" class="request-card-link">
+            <div class="request-food-card">
+                <h4>Canned Food Drive for local shelter</h4>
+                <p>
+                    Collecting canned vegetables, soups, 
+                    and shelf-stable goods for our community partner
+                </p>
+                <div class="cans-progress">
+                    <span>Cans Collected: 40 / Goal: 100</span>
+                </div>
+                <div class="request-info">
+                    <span>Pickup: Central Community Center</span>
+                    <span>Drop-off window: Mon-Fri</span>
+                </div>
+                <span class="donate-food">Donate Food</span>
+            </div>
+        </a>
 
-            <li class="request-links-items"><a href="#">Canned Food Drive for local shelter</a>
-                <p>Collecting canned vegetables, soups, and shelf-stable goods for our community partner</p>
-            </li>
+        <!--Money request 2 -->
+        <a href="#" class="request-card-link">
+            <div class="request-money-card">
+                <h4>Help Family with Groceries this Month</h4>
+                <p>
+                    Recently lost job and facing eviction. 
+                    Need help with immediate basic food needs for three people
+                </p>
+                <div class="money-progress">
+                    <span>Raised: $600 / Goal: $1,000</span>
+                </div>
+                <div class="request-info">
+                    <span>25 Donors</span>
+                    <span>7 Days Left</span>
+                </div>
+                <span class="donate-money">Donate Money</span>
+            </div>
+        </a>
 
-            <li class="request-links-items"><a href="#">Help Family with Groceries this Month</a>
-                <p>Recently lost job and facing eviction. Need help with immediate basic food needs for three people</p>
-            </li>
-            
-            <li class="request-links-items"><a href="#">Help Family with Groceries this Month</a>
-                <p>Recently lost job and facing eviction. Need help with immediate basic food needs for three people</p>
-            </li>
+        <!--Money request 3 -->
+        <a href="#" class="request-card-link">
+            <div class="request-money-card">
+                <h4>Commed Food Drive for local family</h4>
+                <p>
+                    Recently lost job and facing eviction. 
+                    Need help with immediate basic food needs for three people
+                </p>
+                <div class="money-progress">
+                    <span>Raised: $550 / Goal: $1,000</span>
+                </div>
+                <div class="request-info">
+                    <span>25 Donors</span>
+                    <span>7 Days Left</span>
+                </div>
+                <span class="donate-money">Donate Money</span>
+            </div>
+        </a>
 
-            <li class="request-links-items"><a href="#">Canned Food Drive for local shelter</a>
-                <p>Collecting canned vegetables, soups, and shelf-stable goods for our community partner</p>
-            </li>
-        </ul>
+        <!--Food request 3 -->
+        <a href="#" class="request-card-link">
+            <div class="request-food-card">
+                <h4>Canned Food Drive for local shelter</h4>
+                <p>
+                    Collecting canned vegetables, soups, 
+                    and shelf-stable goods for our community partner
+                </p>
+                <div class="cans-progress">
+                    <span>Cans Collected: 40 / Goal: 100</span>
+                </div>
+                <div class="request-info">
+                    <span>Pickup: Central Community Center</span>
+                    <span>Drop-off window: Mon-Fri</span>
+                </div>
+                <span class="donate-food">Donate Food</span>
+            </div>
+        </a>
+
+        <!--Money request 4 -->
+        <a href="#" class="request-card-link">
+            <div class="request-money-card">
+                <h4>Help Family with Groceries this Month</h4>
+                <p>
+                    Recently lost job and facing eviction. 
+                    Need help with immediate basic food needs for three people
+                </p>
+                <div class="money-progress">
+                    <span>Raised: $600 / Goal: $1,000</span>
+                </div>
+                <div class="request-info">
+                    <span>25 Donors</span>
+                    <span>7 Days Left</span>
+                </div>
+                <span class="donate-money">Donate Money</span>
+            </div>
+        </a>
+
+        <!--Food request 4 -->
+        <a href="#" class="request-card-link">
+            <div class="request-food-card">
+                <h4>Canned Food Drive for local shelter</h4>
+                <p>
+                    Collecting canned vegetables, soups, 
+                    and shelf-stable goods for our community partner
+                </p>
+                <div class="cans-progress">
+                    <span>Cans Collected: 40 / Goal: 100</span>
+                </div>
+                <div class="request-info">
+                    <span>Pickup: Central Community Center</span>
+                    <span>Drop-off window: Mon-Fri</span>
+                </div>
+                <span class="donate-food">Donate Food</span>
+            </div>
+        </a>
+    </section>
+
+    <!--Pagination-->
+    <div class="pagination">
+        <a href="#" class="left-arrow disabled">
+            <i class="ri-arrow-left-s-line"></i>Previous
+        </a>
+
+        <a href="#" class="page-num active">1</a>
+        <a href="#" class="page-num">2</a>
+
+        <a href="#" class="right-arrow diabled">
+            Next<i class="ri-arrow-right-s-line"></i>
+        </a>
     </div>
-   
 </body>
